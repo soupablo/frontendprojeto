@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media (min-width:400px){
+    .banner{
+        width: 100%;
+
+    }
+}
+body{
+    padding: 0 10% 10px; /* Padding de 10% à esquerda, 10% à direita e 10px embaixo */
+    background: #FFBBB3;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+
+}
+
+.cabecalho{
+    background-color: #FFBBB3;
+}
+
+.logo {
+    width: 30%;
+
+}
+
+.menu {
+    margin-left: 0; /* Remova a margem à esquerda para alinhar o menu à esquerda */
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    align-items: center;
+    list-style: none;
+}
+
+
+.menu li {
+    margin-right: 40px;
+    z-index: 9999;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+    transition: transform 0.2s, color 0.2s; /* Adicione transições de cor e transformação */
+    
+
+}
+
+.menu li a:hover {
+    color: black; /* Altere a cor ao passar o mouse sobre o item */
+    transform: scale(1.05); 
+    background-color: rgb(246, 131, 198);
+}
+
+
+.parent {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.parent:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.parent:hover .parent .sub-menu2 {
+    display: block;
+}
+
+.menu li a:hover {
+    border-bottom: 5px solid #ff0505;
+}
+
+/* Espaçamento entre os submenus */
+.sub-menu li, .sub-menu2 li {
+    margin-right: 0; /* Remove a margem direita dos itens do submenu */
+    margin-bottom: 10px; /* Adicione margem inferior entre os itens do submenu */
+}
+
+
+
+
+                                        /* CARROSSEL */
+
+
+.carousel-item img {
+    width:894px ; /* Defina a largura da imagem como 100% */
+    height: 290px;
+    border-color: white;
+    border-style: groove;
+   
+}
+/* Centralize o carrossel verticalmente */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(64vh - 100px); /* Ajuste conforme necessário (subtraindo a altura do nav) */
+    padding: 80 10% 10px;
+    /* Padding de 10% à esquerda, 10% à direita e 10px embaixo */
+}
+.carousel-item {
+width: 100%;
+}
+
+
+
+                        /*BANNER*/
+
+
+  .banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #FFBBB3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 180 10% 10px; /* Padding de 10% à esquerda, 10% à direita e 10px embaixo */
+}
+
+
+
+.banner .logoprincipal {
+        height: 212px;
+        max-width: 325px;
+        width: auto; /* Defina a largura como automática para manter a proporção */
+        border-style: groove;
+        border-color: white;
+}
+
+.cards {
+    white-space: nowrap; /* Impede que os cards quebrem para a próxima linha */
+    height: 300px;
+    left: 100px;
+
+    
+
+}
+
+.image-box {
+    display: inline-block;
+   text-align: center; /* Centraliza o texto horizontalmente */
+   margin-right: 93px;
+   ; /* Adicione margem horizontal entre as imagens */
+   
+}
+ 
+  
+  .image-box img {
+    width: 90%; /* Faça a imagem ocupar 100% da largura do card */
+    height: 90%; /* Mantenha a proporção da imagem */
+    object-fit: cover;
+    border-style: groove;
+    border-color: white;
+    display: flex;
+
+  }
+  
+  .image-box p {
+    margin: 0;
+    font-size: 14px; /* Tamanho do texto */
+  }
+  
+  .footer-diagonal {
+
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.footer-diagonal svg {
+    
+    float: left;
+    display: block;
+    width: calc(100% + 1px);
+    height: 45px;
+    transform: rotateY(180deg);
+    background-color: #323131;
+}
+
+.footer-diagonal .shape-fill {
+    fill: #f4f4f4;
+}
+
+.main_footer          { background-color:#323131; color:#fff; font-size:1em; }
+.main_footer .content { float:left; width:80%; margin:0 10%; padding: 2em 0; }
+
+.container { float:left; width:100%; }
+.colfooter { 
+ 
+  width:100%; 
+  height:auto;
+  min-height: 100%; 
+  float:left; 
+  margin-bottom:2em;
+}
+.colfooter ul        { width:100%; float:left; }
+.colfooter ul li     { padding:0.2em 0em; }
+.colfooter ul li a   { text-decoration:none; color:#ffffff; font-size:1em; transition:0.2s; }
+.colfooter ul li a i { font-size:0.5em; }
+.colfooter ul li a:hover { color:#fffb00; }
+
+.colfooter .titleFooter   { 
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    color: #ffffff;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px #424242 solid;
+
+}
+
+.colfooter p  { 
+
+  font-family: 'Lato', sans-serif; 
+  color:#ffffff; 
+  font-size:1em; 
+  height:25px; 
+
+}
+
+.colfooter .redesocial { 
+    
+    color: #ffffff;
+    float: left;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    transition:0.2s;
+
+}
+
+.colfooter .redesocial:hover { 
+    
+    color: #fffb00;
+    transition:0.2s;
+
+}
+
+
+.main_footer_copy          { background-color:#323131; width:100%; float:left; font-family: 'Lato', sans-serif; text-align:center; padding:1.5em 0em; }
+.main_footer_copy .content { float:left; width:80%; margin:0 10%; padding:20px 0; border-top:1px #464646 solid; }
+.main_footer_copy p { font-size:1em; color:#ffffff; height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by a       { color:#fff; text-decoration:none; font-weight:600; transition:0.2s; }
+.main_footer_copy .by a:hover { text-decoration:underline; color:#fffb00 }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+
+/*Responsivo*/
+
+/*960PX BREAKPOINT*/
+@media (min-width:60em){
+
+  .footer-diagonal svg         { width: calc(100% + 1.3px); height: 160px; }
+  .main_footer .content        { padding: 2em 0; }
+  .colfooter .titleFooter      { border-bottom: 0px; }
+  .colfooter                   { width:30%; min-height:200px; margin-right:5%; margin-bottom:0; border-right: 1px #424242 solid; }
+  .colfooter:nth-of-type(3n+0) { margin-right:0; border-right:0;}
+
+}
+
+.p-topline {
+    
+    color: white;
+    display: flex;
+    margin-left: 76.5%;
+}
+
+.top-line {
+    background-color: #323131;
+    height: 23px; /* Adjust the height as needed */
+    width: 100%;
+    position: fixed; /* Use fixed positioning to make it stay at the top */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Adjust z-index as needed to ensure it's above other content */
+}
